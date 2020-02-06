@@ -112,7 +112,7 @@ def words_length_distribution(text):
     words = del_stopwords(text)
     plt.ion()
     fig = plt.figure(figsize=(10, 4))
-    fig.suptitle("WORDS'S LENGTH DISTRIBUTION")
+    fig.suptitle("WORDS LENGTH DISTRIBUTION")
     plt.gcf().subplots_adjust(bottom=0.15)
     fdist = FreqDist(len(token) for token in words)
     fdist.plot(30, cumulative=False)
