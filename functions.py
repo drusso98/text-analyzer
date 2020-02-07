@@ -1,5 +1,8 @@
 import nltk
 nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
 from nltk.tokenize import sent_tokenize, RegexpTokenizer
 from nltk import FreqDist, pos_tag
 import matplotlib.pyplot as plt
